@@ -28,6 +28,7 @@ flowerArea.addEventListener('click', (e) => {
         });
     }
 });
+aartiAudio.loop = true;
 
 // Diya click logic
 diyaArea.addEventListener('click', () => {
@@ -40,4 +41,5 @@ diyaArea.addEventListener('click', () => {
     // Play the aarti sound
     aartiAudio.play();
     console.log("Aarti is playing and diya is moving...");
+
 });
