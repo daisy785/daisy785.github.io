@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ganesh Interactive Aarti</title>
+    <title>Interactive Ganesh Aarti</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,17 +11,18 @@
     <div class="container">
         <img id="ganesh-image" src="ganesh_image.png" alt="Ganesh">
 
-        <!-- Clickable flower area -->
-        <div class="interactive-area flower-area" id="flower-click-area"></div>
-
-        <!-- Clickable diya area -->
-        <div class="interactive-area diya-area" id="diya-click-area"></div>
+        <!-- Clickable overlay with text -->
+        <div class="start-overlay" id="start-click-area">
+            <div class="start-text">Click here to start<br>Flower Fall & Aarti</div>
+        </div>
         
+        <!-- Lit diya image for the animation, initially hidden -->
         <img id="diya-lit" src="diya_lit.png" alt="Lit Diya" class="hidden">
     </div>
+
     <!-- Aarti audio element, controlled by JavaScript -->
     <audio id="aarti-audio" src="ganesh_aarti.mp3"></audio>
-   
+
     <script src="script.js"></script>
 </body>
 </html>
