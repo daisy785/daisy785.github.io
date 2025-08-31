@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Interactive Aarti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <img id="ganesh-image" src="ganesh_image.png" alt="Ganesh">
+
+        <!-- Clickable flower area -->
+        <div class="interactive-area flower-area" id="flower-click-area"></div>
+
+        <!-- Clickable diya area -->
+        <div class="interactive-area diya-area" id="diya-click-area"></div>
+        
+        <img id="diya-lit" src="diya_lit.png" alt="Lit Diya" class="hidden">
+    </div>
+    <!-- Aarti audio element, controlled by JavaScript -->
+    <audio id="aarti-audio" src="ganesh_aarti.mp3"></audio>
+   
+    <script src="script.js"></script>
+</body>
+</html>
